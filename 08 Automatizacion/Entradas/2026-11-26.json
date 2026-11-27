@@ -1,0 +1,479 @@
+{
+  "captured": "2026-11-26T16:34:02.367399-03:00",
+  "data": {
+    "calendar": [
+      {
+        "title": "Foro estudiantil 6to Año",
+        "start": "2026-11-27T08:00:00-03:00",
+        "url": "https://www.google.com/calendar/event?eid=YzlqMzJjcjU3NG9qMmJiM2NkaTNhYjlrNmNvajBiYjI2OHAzaWJiMjZjczYyZTMxNmtzM2llOW5jZyBhbHZhcm9lc3Bpbm96YTUxMkBt",
+        "id": "c9j32cr574oj2bb3cdi3ab9k6coj0bb268p3ibb26cs62e316ks3ie9ncg"
+      },
+      {
+        "title": "Tesina Inglés 6to",
+        "start": "2026-12-02T15:30:00-03:00",
+        "url": "https://www.google.com/calendar/event?eid=dWthMTA2YWE1aGs0ODI5dmhhbGttNmtzZzQgYWx2YXJvZXNwaW5vemE1MTJAbQ",
+        "id": "uka106aa5hk4829vhalkm6ksg4"
+      }
+    ],
+    "gmail": [
+      {
+        "id": "1a2186fd3f77a61d",
+        "from": "Google <noreply-accounts@google.com>",
+        "subject": "Compartiste algunos datos de tu Cuenta de Google con Tailscale",
+        "date": "Thu, 26 Nov 2026 07:18:31 -0800",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a214d18405ea941",
+        "from": "LinkedIn <notifications-noreply@linkedin.com>",
+        "subject": "Seis frases a evitar en una entrevista de trabajo",
+        "date": "Wed, 25 Nov 2026 22:26:45 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a214c94f728a084",
+        "from": "LinkedIn <updates-noreply@linkedin.com>",
+        "subject": "Farmacity ha publicado recientemente",
+        "date": "Wed, 25 Nov 2026 22:17:47 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a2111422b3b165d",
+        "from": "Google <noreply-accounts@google.com>",
+        "subject": "Compartiste algunos datos de tu Cuenta de Google con Plex",
+        "date": "Tue, 24 Nov 2026 21:01:02 -0800",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a20fa2edfed3846",
+        "from": "LinkedIn <messages-noreply@linkedin.com>",
+        "subject": "👤 Podrías conocer a Pato Ibarra",
+        "date": "Tue, 24 Nov 2026 22:17:45 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a20f9c42d76af53",
+        "from": "Google Cloud Platform <CloudPlatform-noreply@google.com>",
+        "subject": "[Pricing Update] Changes to Google Workspace API usage limits starting Feb 2027 and new AI policies",
+        "date": "Tue, 24 Nov 2026 14:10:28 -0800",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a20a84d8be638f4",
+        "from": "LinkedIn <notifications-noreply@linkedin.com>",
+        "subject": "¿Cómo buscas trabajo? Aquí 5 formas de hacerlo",
+        "date": "Mon, 23 Nov 2026 22:26:48 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a201caba3358898",
+        "from": "Google Gemini <google-gemini-noreply@google.com>",
+        "subject": "Actualizaciones importantes en las Apps con Gemini",
+        "date": "Sat, 21 Nov 2026 21:46:32 -0800",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a2003812515d9b9",
+        "from": "LinkedIn <notifications-noreply@linkedin.com>",
+        "subject": "Aspectos que hacen la diferencia al postularte a un trabajo remoto",
+        "date": "Sat, 21 Nov 2026 22:26:44 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1fbe53b945fdfe",
+        "from": "LinkedIn <messages-noreply@linkedin.com>",
+        "subject": "👤 Podrías conocer a ciclon Mds",
+        "date": "Sat, 21 Nov 2026 02:17:46 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1fb09819ef665a",
+        "from": "LinkedIn <updates-noreply@linkedin.com>",
+        "subject": "Una persona con el cargo de Analista de contabilidad y control en PepsiCo ha publicado contenido recientemente",
+        "date": "Fri, 20 Nov 2026 22:17:46 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1f9bfec1c6a38b",
+        "from": "LinkedIn <messages-noreply@linkedin.com>",
+        "subject": "Ursula von der Leyen (President of the European Commission) es popular en tu red",
+        "date": "Fri, 20 Nov 2026 16:17:47 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1f5eb65a421314",
+        "from": "LinkedIn <notifications-noreply@linkedin.com>",
+        "subject": "¿Quién eres después de perder tu empleo?",
+        "date": "Thu, 19 Nov 2026 22:26:46 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1f5e326fadba7f",
+        "from": "LinkedIn <messages-noreply@linkedin.com>",
+        "subject": "👤 Podrías conocer a Manuel Fernandez",
+        "date": "Thu, 19 Nov 2026 22:17:46 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1f5d11ad7a4713",
+        "from": "\"Gobierno de Córdoba\" <noreply@cba.gov.ar>",
+        "subject": "Encuesta de Satisfaccion: Examenes de Aptitud Psic",
+        "date": "Thu, 19 Nov 2026 21:58:00 +0000",
+        "categoria_sugerida": "estudio"
+      },
+      {
+        "id": "1a1f3ed29d2bd68e",
+        "from": "Steam <noreply@steampowered.com>",
+        "subject": "Te han invitado a ayudar a probar No Body No Problem!",
+        "date": "Thu, 19 Nov 2026 05:09:28 -0800",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1f0c50465411be",
+        "from": "LinkedIn <notifications-noreply@linkedin.com>",
+        "subject": "Si el candidato no fue seleccionado, debería saberlo",
+        "date": "Wed, 18 Nov 2026 22:26:45 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1f0bccd23eba48",
+        "from": "LinkedIn <updates-noreply@linkedin.com>",
+        "subject": "Una persona con el cargo de Board Member GdN Group, Group CEO en GDN Group ha publicado contenido recientemente",
+        "date": "Wed, 18 Nov 2026 22:17:47 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1eb9eac0974991",
+        "from": "LinkedIn <notifications-noreply@linkedin.com>",
+        "subject": "Antes de pagar por otro curso, pregúntate lo que debes aprender realmente",
+        "date": "Tue, 17 Nov 2026 22:26:46 +0000 (GMT)",
+        "categoria_sugerida": "estudio"
+      },
+      {
+        "id": "1a1eb966871a447c",
+        "from": "LinkedIn <messages-noreply@linkedin.com>",
+        "subject": "👤 Podrías conocer a Selene Carbone",
+        "date": "Tue, 17 Nov 2026 22:17:45 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1eb4b11856b5f3",
+        "from": "Google <no-reply@accounts.google.com>",
+        "subject": "Alerta de seguridad para alvaroespinoza1235@gmail.com",
+        "date": "Tue, 17 Nov 2026 20:55:26 GMT",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1eb4a91f0a2bc3",
+        "from": "Google <noreply-accounts@google.com>",
+        "subject": "Compartiste algunos datos de tu Cuenta de Google con Dropbox",
+        "date": "Tue, 17 Nov 2026 12:54:54 -0800",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1ea062ad33d978",
+        "from": "Google <no-reply@accounts.google.com>",
+        "subject": "Alerta de seguridad",
+        "date": "Tue, 17 Nov 2026 15:00:33 GMT",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1e6784a5836507",
+        "from": "LinkedIn <notifications-noreply@linkedin.com>",
+        "subject": "Si quieres tener un nuevo empleo en enero, debes iniciar tu estrategia ahora",
+        "date": "Mon, 16 Nov 2026 22:26:45 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1e670155e304f7",
+        "from": "LinkedIn <updates-noreply@linkedin.com>",
+        "subject": "Una persona con el cargo de Gerente de Ambiente en NGEX Minerals Ltd. ha publicado contenido recientemente",
+        "date": "Mon, 16 Nov 2026 22:17:47 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1e2790247c6294",
+        "from": "Aliexpress <message@info.aliexpress.com>",
+        "subject": "Your AliExpress Account Password Has Been Changed",
+        "date": "Mon, 16 Nov 2026 11:49:02 +0800 (CST)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1df7339236ce84",
+        "from": "Hack4u Academy <failed-payments+acct_1KxJLWFMONGKoyrl@stripe.com>",
+        "subject": "El pago 14,99 € a Hack4u Academy no se ha podido realizar",
+        "date": "Sun, 15 Nov 2026 13:43:52 +0000",
+        "categoria_sugerida": "finanzas"
+      },
+      {
+        "id": "1a1d6fd00fbd2047",
+        "from": "LinkedIn <updates-noreply@linkedin.com>",
+        "subject": "Una persona con el cargo de Auxiliar administrativa de compras en BK ESPACIOS S.A. ha publicado contenido recientemente",
+        "date": "Fri, 13 Nov 2026 22:17:47 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1d67df35e29c0a",
+        "from": "Empretienda <notificaciones@empretienda.com>",
+        "subject": "[Vista Mare] Su orden ha sido cancelada",
+        "date": "Fri, 13 Nov 2026 19:59:00 +0000",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1d5b3667f47676",
+        "from": "LinkedIn <messages-noreply@linkedin.com>",
+        "subject": "Horacio Daniel Marín (Presidente y CEO) es popular en tu red",
+        "date": "Fri, 13 Nov 2026 16:17:46 +0000 (GMT)",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1d587137b62759",
+        "from": "Empretienda <notificaciones@empretienda.com>",
+        "subject": "Detalle de tu compra",
+        "date": "Fri, 13 Nov 2026 15:29:21 +0000",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1d5384e31399e6",
+        "from": "Equipo de cuentas Microsoft <account-security-noreply@accountprotection.microsoft.com>",
+        "subject": "Tu código de un solo uso",
+        "date": "Fri, 13 Nov 2026 06:03:17 -0800",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1d52eccd86954a",
+        "from": "Equipo de cuentas Microsoft <account-security-noreply@accountprotection.microsoft.com>",
+        "subject": "Nuevas aplicaciones conectadas a la cuenta de Microsoft",
+        "date": "Fri, 13 Nov 2026 05:52:54 -0800",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1d5265774985dd",
+        "from": "Equipo de cuentas Microsoft <account-security-noreply@accountprotection.microsoft.com>",
+        "subject": "Nuevas aplicaciones conectadas a la cuenta de Microsoft",
+        "date": "Fri, 13 Nov 2026 05:43:40 -0800",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1d24d9a16d6c70",
+        "from": "Google <no-reply@accounts.google.com>",
+        "subject": "Alerta de seguridad",
+        "date": "Fri, 13 Nov 2026 00:27:42 GMT",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1d0e9ed4dfc277",
+        "from": "Equipo de cuentas Microsoft <account-security-noreply@accountprotection.microsoft.com>",
+        "subject": "Nuevas aplicaciones conectadas a la cuenta de Microsoft",
+        "date": "Thu, 12 Nov 2026 09:58:57 -0800",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1ce60de0966897",
+        "from": "Notion Team <notify@updates.notion.com>",
+        "subject": "Se inició sesión en tu cuenta con un nuevo dispositivo",
+        "date": "Thu, 12 Nov 2026 06:10:17 +0000",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1ccb044aada6b2",
+        "from": "LinkedIn <updates-noreply@linkedin.com>",
+        "subject": "Una persona con el cargo de Encargado de inventario en Supermercado ha publicado contenido recientemente",
+        "date": "Wed, 11 Nov 2026 22:17:45 +0000 (GMT)",
+        "categoria_sugerida": "trabajo"
+      },
+      {
+        "id": "1a1cb9bae012eeb2",
+        "from": "Equipo de cuentas Microsoft <account-security-noreply@accountprotection.microsoft.com>",
+        "subject": "Tu código de un solo uso",
+        "date": "Wed, 11 Nov 2026 09:15:38 -0800",
+        "categoria_sugerida": "revisar"
+      },
+      {
+        "id": "1a1cb9aa27f88914",
+        "from": "Equipo de cuentas Microsoft <account-security-noreply@accountprotection.microsoft.com>",
+        "subject": "Cambio de contraseña de la cuenta Microsoft",
+        "date": "Wed, 11 Nov 2026 09:14:23 -0800",
+        "categoria_sugerida": "revisar"
+      }
+    ],
+    "youtube": [
+      {
+        "topic": "ciberseguridad",
+        "title": "¡CUIDADO CON LOS CAPTCHAS! - Te explico por qué",
+        "channel": "Andrea | Cybersecurity + AI",
+        "published": "2026-11-26T19:00:36Z",
+        "url": "https://www.youtube.com/watch?v=SyG63QqSkJ0"
+      },
+      {
+        "topic": "ciberseguridad",
+        "title": "Están robando mi identidad para estafarte #ciberseguridad #scam #dinero",
+        "channel": "Dani Finanzas",
+        "published": "2026-11-26T18:28:56Z",
+        "url": "https://www.youtube.com/watch?v=DlUWrcFfNI0"
+      },
+      {
+        "topic": "ciberseguridad",
+        "title": "#ciberseguridad #tecnologia #informatica #seguridadDigital",
+        "channel": "Que Mas Quieres",
+        "published": "2026-11-26T18:00:36Z",
+        "url": "https://www.youtube.com/watch?v=gG72DA-ZmtE"
+      },
+      {
+        "topic": "ciberseguridad",
+        "title": "FIFA confirma ciberataque: hackers accedieron a información personal y documentos internos #lr",
+        "channel": "La República - LR+",
+        "published": "2026-11-26T18:01:11Z",
+        "url": "https://www.youtube.com/watch?v=_VB0cWbdB1Y"
+      },
+      {
+        "topic": "ciberseguridad",
+        "title": "Wi-Fi gratis con clave: ¿de verdad es seguro? 📶🔒 #Ciberseguridad #Shorts",
+        "channel": "Kyovanic",
+        "published": "2026-11-26T18:00:22Z",
+        "url": "https://www.youtube.com/watch?v=4e5WIXQRitU"
+      },
+      {
+        "topic": "ventas",
+        "title": "mira nuestros productos en mi perfil tiktok #viral #ventas #tiktok",
+        "channel": "videos para niños ",
+        "published": "2026-11-26T19:26:58Z",
+        "url": "https://www.youtube.com/watch?v=DnjO6z6U98M"
+      },
+      {
+        "topic": "ventas",
+        "title": "Buscando el &quot;no&quot; del cliente... a cerrar grandes ventas 💼 #shorts",
+        "channel": "Marta Marcilla Business",
+        "published": "2026-11-26T19:01:40Z",
+        "url": "https://www.youtube.com/watch?v=fa5xQESZVOY"
+      },
+      {
+        "topic": "ventas",
+        "title": "Subía productos y anuncios y esperaba que llegaran las ventas: por qué su dropshipping no funcionó",
+        "channel": "Negocios Sin Filtro",
+        "published": "2026-11-26T18:30:20Z",
+        "url": "https://www.youtube.com/watch?v=Ni2kMz3R-J8"
+      },
+      {
+        "topic": "ventas",
+        "title": "Black Friday: jueves 2:51 AM, ¿cuántas ventas perdiste durmiendo? | King Patricio Olivera",
+        "channel": "King Patricio Olivera",
+        "published": "2026-11-26T18:15:54Z",
+        "url": "https://www.youtube.com/watch?v=QxRJ0QHxTGo"
+      },
+      {
+        "topic": "ventas",
+        "title": "¿Cómo ponerle precio a un producto y ganar dinero? #Negocios #Emprendimiento #Ventas #Finanzas",
+        "channel": "mentalidadcapital0",
+        "published": "2026-11-26T18:13:33Z",
+        "url": "https://www.youtube.com/watch?v=-_cdZzqga00"
+      },
+      {
+        "topic": "finanzas personales",
+        "title": "Su primo le pidió $50.000 prestados del premio 😬 #familia #dinero #finanzaspersonales",
+        "channel": "Moneda a Moneda",
+        "published": "2026-11-26T19:00:22Z",
+        "url": "https://www.youtube.com/watch?v=C9wx3gldrHA"
+      },
+      {
+        "topic": "finanzas personales",
+        "title": "La carrera de la rata: el ciclo que atrapa a millones #dinero #finanzas",
+        "channel": "Platamente",
+        "published": "2026-11-26T19:00:01Z",
+        "url": "https://www.youtube.com/watch?v=2sSAm0B9rZY"
+      },
+      {
+        "topic": "finanzas personales",
+        "title": "La Cartera Permantente: Protección para cuando vengan curvas. #fondosdeinversion #finanzaspersonales",
+        "channel": "ATC Investing | Gestores",
+        "published": "2026-11-26T18:42:17Z",
+        "url": "https://www.youtube.com/watch?v=HtIzkUdola0"
+      },
+      {
+        "topic": "finanzas personales",
+        "title": "Finanzas personales para principiantes: cómo repartir tu primer sueldo en 4 sobres",
+        "channel": "Dinero Claro",
+        "published": "2026-11-26T18:20:29Z",
+        "url": "https://www.youtube.com/watch?v=jJB8plRIQss"
+      },
+      {
+        "topic": "finanzas personales",
+        "title": "POR ESO DEBES TENER EDUCACIÓN FINANCIERA #curiosidades #finance #finanzas #finanzaspersonales",
+        "channel": "MaquiCF",
+        "published": "2026-11-26T18:15:29Z",
+        "url": "https://www.youtube.com/watch?v=lrmo1Y4LfW8"
+      },
+      {
+        "topic": "hábitos",
+        "title": "Pare de negociar com os hábitos que você quer abandonar.",
+        "channel": "Vivienne Alencar",
+        "published": "2026-11-26T19:26:44Z",
+        "url": "https://www.youtube.com/watch?v=GjOciYMM1is"
+      },
+      {
+        "topic": "hábitos",
+        "title": "Afila la SIERRA  el hábito que mantiene vivo tu NEGOCIO #hábitos #negocios #emprendimiento #gestion",
+        "channel": "COMUNITEAM",
+        "published": "2026-11-26T19:00:20Z",
+        "url": "https://www.youtube.com/watch?v=M_2MQnahs8U"
+      },
+      {
+        "topic": "hábitos",
+        "title": "tu Determinación #CrecimientoPersonal #Perseverancia #Enfoque #SuperacionPersonal #Hábitos #Mentas",
+        "channel": "eleva tu vida 365",
+        "published": "2026-11-26T19:00:22Z",
+        "url": "https://www.youtube.com/watch?v=6GuEvVpx7gA"
+      },
+      {
+        "topic": "hábitos",
+        "title": "Sígueme para más Humor y Salud Mental 🤓#psicologia #saludmental #pareja #hábitos",
+        "channel": "Joaquín Caserza | Humor y Salud Mental",
+        "published": "2026-11-26T18:29:29Z",
+        "url": "https://www.youtube.com/watch?v=JxE9NGlU1DE"
+      },
+      {
+        "topic": "hábitos",
+        "title": "No son 21 días: un hábito tarda 66",
+        "channel": "Psibopis",
+        "published": "2026-11-26T18:00:13Z",
+        "url": "https://www.youtube.com/watch?v=DUOxdnCfuyc"
+      },
+      {
+        "topic": "foco y productividad",
+        "title": "Terminou cansado, mas avançou? | 1 Ano em 12 Semanas #Produtividade #Foco",
+        "channel": "Playbooks Audiobooks",
+        "published": "2026-11-26T15:15:25Z",
+        "url": "https://www.youtube.com/watch?v=iglrxRIEXPg"
+      },
+      {
+        "topic": "foco y productividad",
+        "title": "5 PASSOS SIMPLES PARA ELIMINAR QUALQUER DISTRAÇÃO E AMPLIAR SEU FOCO POR MAIS TEMPO | JOEL JOTA",
+        "channel": "comportamento mental",
+        "published": "2026-11-26T11:00:29Z",
+        "url": "https://www.youtube.com/watch?v=x0IgnOCWpBk"
+      },
+      {
+        "topic": "foco y productividad",
+        "title": "The day to day planner that finally works for my ADHD brain 🧠✨",
+        "channel": "FOCO - ADHD Planner App",
+        "published": "2026-11-26T08:56:26Z",
+        "url": "https://www.youtube.com/watch?v=hkjdQlg7pMo"
+      },
+      {
+        "topic": "foco y productividad",
+        "title": "#DrFabianoDeAbreu #Foco #Produtividade #Atenção #AltaPerformance",
+        "channel": "Dr. Fabiano de Abreu Agrela ",
+        "published": "2026-11-25T19:25:51Z",
+        "url": "https://www.youtube.com/watch?v=EiJmV2TblZE"
+      },
+      {
+        "topic": "foco y productividad",
+        "title": "Às 3h07 você deixou alguém pra trás #produtividade #foco #mentalidade",
+        "channel": "OGIAGA",
+        "published": "2026-11-25T15:45:36Z",
+        "url": "https://www.youtube.com/watch?v=AgCdDG9Wc7o"
+      }
+    ]
+  },
+  "errors": {}
+}

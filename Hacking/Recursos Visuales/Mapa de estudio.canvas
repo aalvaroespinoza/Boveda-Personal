@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"inicio","type":"text","text":"# Ciberseguridad\nAprender → practicar → conservar","x":0,"y":0,"width":340,"height":170,"color":"5"},
+		{"id":"linux","type":"text","text":"# Linux\nCurso terminado\nRepasar comandos, permisos y Bash","x":-420,"y":250,"width":340,"height":170,"color":"4"},
+		{"id":"hacking","type":"text","text":"# Introducción al hacking\nCurso en progreso\nIP, MAC y redes","x":420,"y":250,"width":340,"height":170,"color":"2"},
+		{"id":"ipv4","type":"text","text":"# IPv4\n32 bits = 4 octetos\nRed y host dependen del prefijo","x":60,"y":510,"width":340,"height":170,"color":"4"},
+		{"id":"ipv6","type":"text","text":"# IPv6\n128 bits = 8 grupos de 16\nHexadecimal y compresión","x":440,"y":510,"width":340,"height":170,"color":"5"},
+		{"id":"mac","type":"text","text":"# MAC Ethernet\n48 bits = 6 octetos\nDirección de enlace, puede ser local","x":820,"y":510,"width":340,"height":170,"color":"6"},
+		{"id":"nota","type":"file","file":"Recursos Visuales/Redes - IPv4 IPv6 y MAC.md","x":420,"y":820,"width":480,"height":340}
+	],
+	"edges":[
+		{"id":"e0","fromNode":"inicio","fromSide":"bottom","toNode":"linux","toSide":"top"},
+		{"id":"e1","fromNode":"inicio","fromSide":"bottom","toNode":"hacking","toSide":"top"},
+		{"id":"e2","fromNode":"hacking","fromSide":"bottom","toNode":"ipv4","toSide":"top"},
+		{"id":"e3","fromNode":"hacking","fromSide":"bottom","toNode":"ipv6","toSide":"top"},
+		{"id":"e4","fromNode":"hacking","fromSide":"bottom","toNode":"mac","toSide":"top"},
+		{"id":"e5","fromNode":"ipv6","fromSide":"bottom","toNode":"nota","toSide":"top"}
+	]
+}

@@ -1,0 +1,10 @@
+{
+  "guardar_detalle_gmail": false,
+  "minutos_minimos_youtube": 10,
+  "reglas_gmail": [
+    {"categoria": "finanzas", "contiene": ["factura", "pago", "mercado pago", "resumen de cuenta", "transferencia"], "motivo": "Términos financieros en remitente o asunto"},
+    {"categoria": "estudio", "contiene": ["curso", "clase", "examen", "certificaci", "udemy"], "motivo": "Términos de estudio en remitente o asunto"},
+    {"categoria": "trabajo", "contiene": ["reuni", "propuesta", "presupuesto", "cliente", "venta"], "motivo": "Términos de trabajo en remitente o asunto"},
+    {"categoria": "lectura", "contiene": ["newsletter", "boletín", "boletin", "unsubscribe"], "motivo": "Términos de boletín en remitente o asunto"}
+  ]
+}

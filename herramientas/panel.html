@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0e13">
+  <title>Bóveda Personal · Operating System</title>
+  <link rel="stylesheet" href="/panel.css">
+</head>
+<body>
+  <div class="app">
+    <!-- BARRA LATERAL IZQUIERDA (ESCRITORIO) -->
+    <aside class="sidebar">
+      <div class="brand">
+        BÓVEDA PERSONAL
+        <small>Backend & Operating System</small>
+      </div>
+
+      <nav class="nav" aria-label="Espacios principales">
+        <button class="active" data-route="inicio"><span class="icon">⌂</span><span class="label">Inicio</span></button>
+        <button data-route="investigacion"><span class="icon">▱</span><span class="label">Investigar y Estudio</span></button>
+        <button data-route="proyectos"><span class="icon">□</span><span class="label">Proyectos</span></button>
+        <button data-route="tareas"><span class="icon">☑</span><span class="label">Tareas</span></button>
+        <button data-route="captura"><span class="icon">⚡</span><span class="label">Entrada</span></button>
+        <button data-route="finanzas"><span class="icon">◌</span><span class="label">Finanzas</span></button>
+        <button data-route="actividad"><span class="icon">≡</span><span class="label">Actividad</span></button>
+      </nav>
+
+      <div class="sidebar-vault-link">
+        <a href="obsidian://open?vault=Boveda%20Personal" class="obsidian-app-button" title="Abrir aplicación Obsidian">
+          <span>Abrir Obsidian App</span>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="sidebar-footer">
+        <span class="sync-dot"></span>
+        <span>Local conectado</span>
+      </div>
+    </aside>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="main">
+      <header class="topbar">
+        <span class="crumb">Bóveda Personal / <strong id="current-route">Inicio</strong></span>
+        <div class="topbar-right">
+          <span class="live-clock" id="live-clock" title="Hora local actual">--:--</span>
+          <div class="sync-pill" id="sync-container" title="Conexión local activa">
+            <span class="sync-dot" id="sync-dot"></span>
+            <span id="sync-state">Conectado</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- ===================================================================
+           1. VISTA: INICIO ("HOY" · WORKBENCH DE OPERACIONES Y ESCRITURA)
+           =================================================================== -->
+      <section id="inicio" class="view active">
+        <div class="page-head">
+          <div class="eyebrow" id="today-label">HOY</div>
+          <h1>Mi Espacio de Trabajo</h1>
+          <p id="today-date"></p>
+        </div>
+
+        <!-- Banner de Enfoque Activo ("Por dónde voy") -->
+        <div class="focus-banner" id="focus-banner">
+          <div class="focus-meta">
+            <span class="focus-tag"><span class="pulse-indicator"></span> ENFOQUE ACTUAL</span>
+            <h2 id="focus-title">03 / RECONOCIMIENTO · Nmap</h2>
+            <p id="focus-desc">Curso actual: Introducción al Hacking. Retomá tu clase desde el último apunte.</p>
+          </div>
+          <div class="focus-actions">
+            <a id="focus-open-obsidian" class="action-btn primary" href="obsidian://open?vault=Boveda%20Personal&file=Hacking%2FCursos%2FHack4u%2FIntroducci%C3%B3n%20al%20Hacking%20%C2%B7%20Mi%20apunte.md">
+              Continuar apunte en Obsidian ↗
+            </a>
+            <button id="focus-open-machete" class="action-btn secondary" data-note-path="Hacking/Temas/Reconocimiento/Nmap - Comandos.md">
+              Machete Nmap ✎
+            </button>
+            <a class="action-btn ghost" href="obsidian://open?vault=Boveda%20Personal&file=Hacking%2F00_Ciberseguridad.md">
+              Centro de Hacking ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Scratchpad Inmediato (Captura sin Burocracia) -->
+        <section class="scratchpad-card">
+          <div class="scratchpad-header">
+            <div>
+              <span class="card-eyebrow">CAPTURA INMEDIATA</span>
+              <h3>Bloc de Notas Rápido</h3>
+            </div>
+            <span class="shortcut-tip">Ctrl+Enter para guardar</span>
+          </div>
+          <textarea id="scratchpad-input" placeholder="Escribí una idea, comando de terminal, pregunta o apunte libre en Markdown..."></textarea>
+          <div class="scratchpad-actions">
+            <span class="scratchpad-destination">Guarda directamente en <code>01 Entrada/</code></span>
+            <button id="scratchpad-save" class="action-btn primary compact">
+              <span>⚡ Guardar apunte</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Grilla Asimétrica: Proyectos Activos + Tareas y Notas Recientes -->
+        <div class="split-home">
+          <!-- Columna Izquierda: Tus Proyectos Reales -->
+          <div class="stack">
+            <section class="panel">
+              <div class="panel-head">
+                <div>
+                  <span class="card-eyebrow">DOCUMENTOS VIVOS</span>
+                  <h2>Proyectos Activos</h2>
+                  <p>Tus proyectos reales con su estado y próximo paso.</p>
+                </div>
+                <button class="link-action" data-route="proyectos">Ver todos →</button>
+              </div>
+              <div id="home-projects" class="projects-list"></div>
+            </section>
+          </div>
+
+          <!-- Columna Derecha: Tareas Inmediatas + Notas Recientes -->
+          <div class="stack">
+            <!-- Tareas de hoy -->
+            <section class="panel">
+              <div class="panel-head">
+                <div>
+                  <span class="card-eyebrow">EJECUCIÓN</span>
+                  <h2>Atención Hoy</h2>
+                  <p>Acciones concretas con su contexto en Obsidian.</p>
+                </div>
+                <button class="link-action" data-route="tareas">Tablero →</button>
+              </div>
+              <div id="home-attention"></div>
+            </section>
+
+            <!-- Notas trabajadas recientemente -->
+            <section class="panel">
+              <div class="panel-head">
+                <div>
+                  <span class="card-eyebrow">HISTORIAL</span>
+                  <h2>Notas Recientes</h2>
+                  <p>Últimos archivos editados en tu bóveda.</p>
+                </div>
+              </div>
+              <div id="home-recent" class="recent-notes-list"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           2. VISTA: INVESTIGACIÓN Y ESTUDIO
+           =================================================================== -->
+      <section id="investigacion" class="view">
+        <div class="page-head">
+          <div class="eyebrow">CONOCIMIENTO Y FUENTES</div>
+          <h1>Investigación y Estudio</h1>
+          <p>Tus notas de estudio técnico y directorio de fuentes verificadas para aprender y conectar.</p>
+        </div>
+
+        <!-- Pestañas de la vista -->
+        <div class="view-tabs">
+          <button class="tab-btn active" id="tab-btn-study" data-subtab="study">
+            <span>Mis Notas de Estudio</span>
+            <span class="badge" id="study-notes-count">0</span>
+          </button>
+          <button class="tab-btn" id="tab-btn-sources" data-subtab="sources">
+            <span>Directorio de Fuentes Curadas</span>
+            <span class="badge" id="sources-count">0</span>
+          </button>
+        </div>
+
+        <!-- Subpestaña 1: Notas de Estudio (Hacking / Conocimiento) -->
+        <div id="subtab-study" class="subtab-content active">
+          <div class="subtab-toolbar">
+            <div class="search-box">
+              <input type="text" id="study-search" placeholder="Buscar apunte por título, tema o comando...">
+            </div>
+            <button id="btn-new-study-note" class="action-btn primary compact">
+              <span>+ Nuevo apunte de estudio</span>
+            </button>
+          </div>
+
+          <div class="study-grid" id="study-notes-grid"></div>
+        </div>
+
+        <!-- Subpestaña 2: Directorio de Fuentes Curadas -->
+        <div id="subtab-sources" class="subtab-content">
+          <section class="panel" style="margin-bottom: 16px;">
+            <p class="source-policy">
+              Directorio de fuentes validadas. Al tocar <strong>"Crear apunte de estudio"</strong> se genera automáticamente una nota en <code>04 Conocimiento/</code> con la plantilla de estudio para volcar tus conclusiones.
+            </p>
+            <div class="filters" id="topic-filters"></div>
+          </section>
+
+          <div class="research-directory">
+            <div class="directory-header">
+              <div>Tema</div>
+              <div>Título de la fuente</div>
+              <div>Canal / Autor</div>
+              <div style="text-align: right;">Acciones de estudio</div>
+            </div>
+            <div id="youtube"></div>
+          </div>
+
+          <section id="research-empty" class="panel empty" style="margin-top: 14px;" hidden>
+            <strong>Sin fuentes para este tema</strong>
+            No hay fuentes registradas bajo esta categoría.
+          </section>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           3. VISTA: PROYECTOS (DOCUMENTOS VIVOS)
+           =================================================================== -->
+      <section id="proyectos" class="view">
+        <div class="page-head">
+          <div class="eyebrow">ESTRUCTURA DE TRABAJO</div>
+          <h1>Proyectos</h1>
+          <p>Tus notas centrales de proyecto. Escribí directamente en ellas o abrirlas en Obsidian.</p>
+        </div>
+
+        <div id="projects-full-list" class="projects-full-container"></div>
+      </section>
+
+      <!-- ===================================================================
+           4. VISTA: TAREAS (EJECUCIÓN Y CONTEXTO)
+           =================================================================== -->
+      <section id="tareas" class="view">
+        <div class="page-head">
+          <div class="eyebrow">EJECUCIÓN</div>
+          <h1>Tareas</h1>
+          <p>La acción en Google Tasks. El contexto permanece en tus notas de Obsidian.</p>
+        </div>
+
+        <div class="panel" style="margin-bottom: 16px;">
+          <div class="panel-head">
+            <div>
+              <span class="card-eyebrow">NUEVA ACCIÓN</span>
+              <h2>Agregar tarea rápida</h2>
+            </div>
+          </div>
+          <div class="form-grid">
+            <label class="wide">Título
+              <input id="quick-title" placeholder="Ej.: Revisar el apunte de Nmap y puertos filtrados">
+            </label>
+            <label>Fecha
+              <input id="quick-due" type="date">
+            </label>
+            <label>Proyecto
+              <select id="quick-project"></select>
+            </label>
+            <label class="wide">Contexto en Obsidian
+              <input id="quick-context" placeholder="Qué nota o comando necesitás tener abierto al resolverla">
+            </label>
+          </div>
+          <div class="form-actions">
+            <button id="quick-save" class="action-btn primary compact">Crear tarea</button>
+          </div>
+        </div>
+
+        <div id="task-board" class="split"></div>
+      </section>
+
+      <!-- ===================================================================
+           5. VISTA: ENTRADA (CAPTURA Y APUNTES ORIGINALES)
+           =================================================================== -->
+      <section id="captura" class="view">
+        <div class="page-head">
+          <div class="eyebrow">BANDEJA DE ENTRADA</div>
+          <h1>Capturar</h1>
+          <p>Guardá primero en texto plano. Organizá el destino cuando tengas contexto.</p>
+        </div>
+
+        <div class="split">
+          <section class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Nueva nota en Entrada</h2>
+                <p>Escribí libremente. Se guarda como nota Markdown en <code>01 Entrada/</code>.</p>
+              </div>
+            </div>
+            <div class="form-grid">
+              <label class="wide">Título
+                <input id="title" placeholder="Título o idea principal">
+              </label>
+              <label>Origen
+                <select id="source">
+                  <option>Otra</option>
+                  <option>WhatsApp</option>
+                  <option>Instagram</option>
+                  <option>YouTube</option>
+                  <option>Gmail</option>
+                </select>
+              </label>
+              <label>Proyecto (opcional)
+                <select id="task-project"></select>
+              </label>
+              <label class="wide">Contenido Markdown
+                <textarea id="body" placeholder="Pegá un mensaje, enlace, código o redactá tu idea..."></textarea>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button id="inbox" class="action-btn secondary compact">Guardar en Entrada</button>
+              <button id="task" class="action-btn primary compact">Crear tarea</button>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Notas en Entrada</h2>
+                <p>Elementos pendientes de procesar o archivar.</p>
+              </div>
+            </div>
+            <div id="inbox-list"></div>
+          </section>
+        </div>
+
+        <!-- Adjunto Foto / PDF -->
+        <section class="panel" style="margin-top: 16px;">
+          <div class="panel-head">
+            <div>
+              <h2>Foto o PDF de apunte manuscrito</h2>
+              <p>Se guarda como original en <code>07 Adjuntos/</code> y crea su nota correspondiente.</p>
+            </div>
+          </div>
+          <div class="form-grid">
+            <label>Título del apunte
+              <input id="attachment-title" placeholder="Ej.: Apunte de clase - Subredes">
+            </label>
+            <label>Proyecto
+              <select id="attachment-project"></select>
+            </label>
+            <label class="wide">Archivo (Imagen o PDF)
+              <input id="attachment-file" type="file" accept="image/*,application/pdf">
+            </label>
+          </div>
+          <p class="form-note">Máximo 8 MB por archivo.</p>
+          <div class="form-actions">
+            <button id="attachment-save" class="action-btn secondary compact">Guardar original en Entrada</button>
+          </div>
+        </section>
+      </section>
+
+      <!-- ===================================================================
+           6. VISTA: FINANZAS
+           =================================================================== -->
+      <section id="finanzas" class="view">
+        <div class="page-head">
+          <div class="eyebrow">CONTROL REAL</div>
+          <h1>Finanzas</h1>
+          <p>Datos reales, comprobantes y conciliación. Inicio previsto: 1 de diciembre.</p>
+        </div>
+
+        <div class="split">
+          <section class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Cuentas y conciliación</h2>
+                <p>Sin saldos cargados, la pantalla no asume cero.</p>
+              </div>
+            </div>
+            <div id="finance"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Saldo inicial</h2>
+                <p>Registrá un saldo solo después de verificarlo en la app bancaria.</p>
+              </div>
+            </div>
+            <div class="form-grid">
+              <label>Cuenta
+                <input id="opening-account" placeholder="Mercado Pago, ARQ, Efectivo…">
+              </label>
+              <label>Saldo ARS
+                <input id="opening-amount" inputmode="decimal" placeholder="0,00">
+              </label>
+            </div>
+            <p class="form-note">
+              <label><input id="opening-confirm" type="checkbox"> Comprobé el saldo real en la cuenta</label>
+            </p>
+            <div class="form-actions">
+              <button id="opening-save" class="action-btn primary compact">Registrar saldo</button>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel" style="margin-top: 16px;">
+          <div class="panel-head">
+            <div>
+              <h2>Registrar movimiento</h2>
+              <p>Una transferencia propia no cuenta como ingreso o gasto.</p>
+            </div>
+          </div>
+          <div class="form-grid">
+            <label>Tipo
+              <select id="movement-kind">
+                <option value="gasto">Gasto</option>
+                <option value="ingreso">Ingreso</option>
+                <option value="transferencia">Transferencia</option>
+              </select>
+            </label>
+            <label>Origen
+              <select id="movement-source"></select>
+            </label>
+            <label>Destino
+              <select id="movement-dest"></select>
+            </label>
+            <label>Importe ARS
+              <input id="movement-amount" inputmode="decimal" placeholder="0,00">
+            </label>
+            <label>Fecha
+              <input id="movement-date" type="date" min="2026-12-01">
+            </label>
+            <label>Categoría
+              <input id="movement-category" placeholder="Categoría">
+            </label>
+            <label class="wide">Descripción
+              <input id="movement-desc" placeholder="Descripción o referencia">
+            </label>
+          </div>
+          <p class="form-note">
+            <label><input id="movement-confirm" type="checkbox"> Comprobé importe, cuenta y comprobante</label>
+          </p>
+          <div class="form-actions">
+            <button id="movement-save" class="action-btn primary compact">Guardar movimiento</button>
+          </div>
+        </section>
+
+        <section class="panel" style="margin-top: 16px;">
+          <div class="panel-head">
+            <div>
+              <h2>Conciliar saldo</h2>
+              <p>Una diferencia queda abierta para investigar; no altera movimientos históricos.</p>
+            </div>
+          </div>
+          <div class="form-grid">
+            <label>Cuenta
+              <select id="reconcile-account"></select>
+            </label>
+            <label>Saldo real ARS
+              <input id="reconcile-amount" inputmode="decimal" placeholder="0,00">
+            </label>
+            <label>Fecha
+              <input id="reconcile-date" type="date" min="2026-12-01">
+            </label>
+          </div>
+          <p class="form-note">
+            <label><input id="reconcile-confirm" type="checkbox"> Consulté el saldo real en el extracto</label>
+          </p>
+          <div class="form-actions">
+            <button id="reconcile-save" class="action-btn secondary compact">Comparar saldos</button>
+          </div>
+        </section>
+      </section>
+
+      <!-- ===================================================================
+           7. VISTA: ACTIVIDAD (MONITOREO DE FUENTES)
+           =================================================================== -->
+      <section id="actividad" class="view">
+        <div class="page-head">
+          <div class="eyebrow">FUENTES CONECTADAS</div>
+          <h1>Actividad</h1>
+          <p>Lectura y clasificación. Ninguna fuente externa modifica tus correos.</p>
+        </div>
+
+        <div class="split">
+          <section class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Estado de las fuentes</h2>
+                <p>Última ejecución, volumen e incidencias visibles.</p>
+              </div>
+            </div>
+            <div id="source-status"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Gmail · lectura</h2>
+                <p>Clasificación sugerida. Verificá cada correo directamente en Gmail.</p>
+              </div>
+            </div>
+            <div id="gmail"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- =======================================================================
+       DRAWER LATERAL: VISOR Y EDITOR UNIVERSAL DE MARKDOWN
+       ======================================================================= -->
+  <div id="note-drawer" class="note-drawer" hidden>
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="drawer-title-box">
+          <span class="drawer-path-badge" id="drawer-path">cargando...</span>
+          <h2 id="drawer-title">Nota</h2>
+        </div>
+        <div class="drawer-header-actions">
+          <a id="drawer-obsidian-link" class="action-btn primary compact" href="#" title="Abrir en la app de Obsidian">
+            <span>Obsidian App ↗</span>
+          </a>
+          <button id="drawer-mode-toggle" class="action-btn secondary compact" title="Alternar entre modo lectura y editor">
+            <span id="drawer-mode-label">✎ Editar</span>
+          </button>
+          <button id="drawer-close" class="drawer-close-btn" aria-label="Cerrar visor">✕</button>
+        </div>
+      </div>
+
+      <div class="drawer-body">
+        <!-- Modo Lectura Renderizado -->
+        <div id="drawer-preview" class="markdown-preview"></div>
+        <!-- Modo Edición Texto Plano -->
+        <div id="drawer-edit-pane" class="markdown-editor-pane" hidden>
+          <textarea id="drawer-editor-textarea" spellcheck="false" placeholder="Escribí tu nota en Markdown..."></textarea>
+          <div class="drawer-save-bar">
+            <span>Guardado directo al archivo <code>.md</code></span>
+            <button id="drawer-save-btn" class="action-btn primary compact">Guardar cambios (Ctrl+S)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGACIÓN MÓVIL INFERIOR (IPHONE) -->
+  <nav class="mobile-nav" aria-label="Navegación móvil">
+    <button class="active" data-route="inicio"><span class="mi">⌂</span>Inicio</button>
+    <button data-route="investigacion"><span class="mi">▱</span>Investigar</button>
+    <button data-route="proyectos"><span class="mi">□</span>Proyectos</button>
+    <button id="open-more-sheet"><span class="mi">•••</span>Más</button>
+  </nav>
+
+  <!-- BOTTOM SHEET MODAL ("MÁS" EN IPHONE) -->
+  <div id="mobile-sheet" class="mobile-sheet" hidden>
+    <div class="sheet-backdrop" id="sheet-backdrop"></div>
+    <div class="sheet-content">
+      <div class="sheet-handle"></div>
+      <div class="sheet-title">Secciones de la Bóveda</div>
+      <div class="sheet-grid">
+        <button class="sheet-btn" data-route="tareas">
+          <span class="sheet-btn-main"><span>☑</span>Tareas</span>
+          <span class="sheet-badge">Ejecución</span>
+        </button>
+        <button class="sheet-btn" data-route="captura">
+          <span class="sheet-btn-main"><span>⚡</span>Entrada</span>
+          <span class="sheet-badge">Captura</span>
+        </button>
+        <button class="sheet-btn" data-route="finanzas">
+          <span class="sheet-btn-main"><span>◌</span>Finanzas</span>
+          <span class="sheet-badge">Control</span>
+        </button>
+        <button class="sheet-btn" data-route="actividad">
+          <span class="sheet-btn-main"><span>≡</span>Actividad</span>
+          <span class="sheet-badge">Fuentes</span>
+        </button>
+        <a class="sheet-btn obsidian-direct" href="obsidian://open?vault=Boveda%20Personal">
+          <span class="sheet-btn-main"><span>🟣</span>Abrir Obsidian App</span>
+          <span class="sheet-badge">App nativa ↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MENSAJES FLOTANTES TOAST -->
+  <p id="message" class="status" role="status" aria-live="polite"></p>
+
+  <!-- SCRIPTS Y CONTROLADORES -->
+  <script src="/marked.min.js"></script>
+  <script src="/anime.min.js"></script>
+  <script src="/animaciones.js"></script>
+  <script src="/panel.js"></script>
+</body>
+</html>
